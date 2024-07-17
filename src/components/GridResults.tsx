@@ -30,7 +30,8 @@ export const GridResults = ({ query, handleLoading }: IGridResults) => {
       <p className="no-results">
         {data && data.results.length === 0
           ? "No results: "
-          : "Results: " + data.total}
+          : "Results: "}
+          <b>{query}</b>
       </p>
 
       <div className="grid">
